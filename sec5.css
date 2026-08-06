@@ -27,10 +27,10 @@
 .sec-5-2{
     width:100%;
     max-width:1200px;
-
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:28px;
+    justify-items:center;
 }
 
 .certificate-box{
@@ -50,6 +50,7 @@
     display:flex;
 
     flex-direction:column;
+    width:100%;
     max-width: 380px;
 }
 
