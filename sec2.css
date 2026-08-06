@@ -1,0 +1,253 @@
+.sec2{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    position: relative;
+}
+.sec2::before{
+    content:"";
+    position:absolute;
+    width:260px;
+    height:260px;
+    background:#fff1e6;
+    border-radius:50%;
+    top:80px;
+    left:-120px;
+    filter:blur(70px);
+    z-index:-1;
+}
+.sec-2-1{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+.sec-2-1> :nth-child(1){
+    font-weight: 600;
+}
+.sec-2-2{
+    display: flex;
+    justify-content: center;
+    margin-top:70px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap:70px ;
+}
+.sec-2-2-1{
+    flex-shrink:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.sec-2-2-1 img{
+    width:340px;
+    height:340px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid white;
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.sec-2-2-1 img:hover{
+    transform:scale(1.04);
+}
+.sec-2-2-2-1{
+    display: flex;
+    gap: 50px;
+}
+.sec-2-2-2{
+    flex:1;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.box{
+    width:300px;
+    padding:28px;
+    border-radius:24px;
+    border:1px solid #ececec;
+    background:white;
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    transition:.35s;
+}
+.box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 45px rgba(0,0,0,.12);
+}
+.box img{
+    width: 42px;
+    margin-bottom: 10px;
+}
+.box>:nth-child(2){
+    font-size: 20px;
+    font-weight: 600;
+}
+.box>:nth-child(3),.box>:nth-child(4){
+    font-size: 17px;
+}
+.p1{
+    width:100%;
+    font-size:18px;
+    line-height:1.9;
+    color:#555;
+}
+.section-subtitle{
+    font-size:13px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#8d8d8d;
+    margin-bottom:15px;
+}
+
+.sec-2-1 h1{
+    font-size:60px;
+    font-weight:800;
+    line-height:1;
+    margin:0;
+}
+.about-content{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.p1{
+    font-size:18px;
+    line-height:1.9;
+    color:#555;
+    width:100%;
+}
+
+.about-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
+}
+
+.about-tags span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 22px;
+    border:1px solid #ddd;
+    border-radius:30px;
+    background:#fff;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s ease;
+    cursor:default;
+}
+
+.about-tags span i{
+    color:darkorange;
+    font-size:18px;
+}
+
+.about-tags span:hover{
+    background:darkorange;
+    color:#fff;
+    transform:translateY(-3px);
+    box-shadow:0 6px 15px rgba(255,140,0,.25);
+}
+
+.about-tags span:hover i{
+    color:#fff;
+}
+@media(max-width:1024px){
+    .sec2{
+    height:auto;
+    padding:80px 20px 30px;
+    }
+    .sec-2-2{
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    }
+    .sec-2-2-1 {
+    margin-left: 0;
+    }
+    .sec-2-2-1 img{
+        width: 250px;
+        height: 250px;
+    }
+    .sec-2-2-2{
+        width: 100%;
+    align-items: center;
+    }
+    .sec-2-2-2-1{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    }
+    .box{
+    width:300px;
+    }
+    .sec-2-2 p{
+    width:90%;
+    text-align: justify;
+    }
+}
+@media (max-width:767px){
+
+.sec2{
+    padding:60px 20px;
+}
+.sec-2-2{
+    margin-top: 20px;
+    gap: 25px;
+    padding-bottom: 20px;
+}
+.sec-2-2-1 img{
+    width:220px;
+    height:220px;
+}
+.sec-2-2-2-1{
+    flex-direction:column;
+}
+
+.box{
+    width:100%;
+}
+
+.sec-2-2 p{
+    width:100%;
+    text-align: justify;
+}
+.p1{
+    text-align:left;
+    font-size:16px;
+    line-height:1.8;
+}
+
+}
+/* @media(max-width:767px){
+    .sec2{
+    padding:60px 20px;
+    }
+    .sec-2-2{
+    margin-top: 50px;
+    flex-direction: column;
+    }
+    .sec-2-2-1 {
+    margin-left: 0px;
+    }
+    .sec-2-2-1 img{
+    width: 250px;
+    }
+    .sec-2-2-2{
+    align-items: center;
+    }
+    .sec-2-2-2-1{
+        flex-direction: column;
+    }
+} */
