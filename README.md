@@ -83,7 +83,8 @@ You can download my resume directly from the portfolio website.
 
 ## 📱 Live Demo
 
-Coming Soon (GitHub Pages)
+🌐 **Portfolio Website:**  
+https://sindhunelluri.github.io/Sindhu_Nelluri_Portfolio/
 
 ## ⭐ Thank You
 
