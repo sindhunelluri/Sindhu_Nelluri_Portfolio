@@ -1,15 +1,9 @@
 .sec1{
-
 display:flex;
-
 align-items:center;
-
 justify-content:space-between;
-
-padding:80px 8%;
-
-min-height:100vh;
-
+min-height:auto;
+padding:100px 8% 60px;
 gap:60px;
 
 background:white;
@@ -254,8 +248,8 @@ h2{
 @media (max-width:600px){
 
 .sec1{
-    gap: 25px;
-    padding:140px 20px 50px;
+    min-height:auto;
+    padding:90px 20px 40px;
 }
 
 .hero-right img{
