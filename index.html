@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="sec1.css" />
         <link rel="stylesheet" href="sec2.css" />
-        <link rel="stylesheet" href="education.css" />
+        <!--<link rel="stylesheet" href="education.css" /> -->
         <link rel="stylesheet" href="sec3.css" />
         <link rel="stylesheet" href="sec4.css" />
         <link rel="stylesheet" href="sec5.css" />
@@ -18,6 +18,8 @@
         <link rel="stylesheet" href="sec7.css" />
     </head>
     <body>
+        <div class="cursor-dot"></div>
+        <div class="cursor-circle"></div>
         <!--Navbar-->
         <nav class="navbar">
             <div class="logo">
@@ -25,7 +27,7 @@
             </div>
             <ul class="menu-bar">
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
+                <!-- <li><a href="#education">Education</a></li> -->
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
@@ -43,7 +45,7 @@
             <!-- <div class="hamburger"><i class="fa-solid fa-bars"></i></div> -->
             <ul class="menu-bar">
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
+                <!-- <li><a href="#education">Education</a></li> -->
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
@@ -51,6 +53,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
         <!--Section 1 | Home-->
         <section class="sec1" id="home">
             <div class="hero-left">
@@ -63,8 +66,19 @@
                     <i class="fa-solid fa-circle"></i>
                     OPEN TO WORK
                 </div>
-                <h2><span id="typing"></span></h2>
-                <div class="skill-pills">
+                <h2 class="hero-subtitle">
+                    <span class="degree">B.Tech – Information Technology</span>
+                    <span class="separator">|</span>
+                    <span id="typing"></span>
+                </h2>
+                <p class="hero-description">
+                    Aspiring Software Engineer passionate about building practical solutions,
+                    solving problems, and continuously learning new technologies.
+                    <span class="academic-highlight">
+                        First Class with Distinction • CGPA 9.10
+                    </span>
+                </p>
+                <!--<div class="skill-pills">
                     <span><i class="fa-brands fa-python"></i> Python</span>
                     <span><i class="fa-brands fa-java"></i> Java</span>
 
@@ -79,7 +93,7 @@
                     <span><i class="fa-brands fa-git-alt"></i> Git</span>
 
                     <span><i class="fa-solid fa-code"></i> VS Code</span>
-                </div>
+                </div> -->
                 <div class="btns">
                     <a href="assets/Sindhu_Nelluri.pdf" download>Download CV</a>
                     <a href="#contact" class="contact-btn">Contact Me</a>
@@ -96,22 +110,14 @@
                     <a href="mailto:sindhunelluri3016@gmail.com">
                         <i class="fas fa-envelope"></i>
                     </a>
-                </div>
-                <!--
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/sindhu-nelluri"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+                </div> 
 
-                    <a href="https://github.com/sindhunelluri"><img src="assets/github.png" alt="GitHub"></a>
-
-                    <a href="mailto:sindhunelluri3016@gmail.com"><img src="assets/email.png" alt="Email" class="email-icon"></a>
-                </div> -->
-
-            </div>
+             </div>
             <div class="hero-right">
                 <div class="circle"></div>
                 <img src="assets/sindhu.jpeg">
             </div>
-        </section>
+        </section> 
         <!--Section 2 | About-->
         <section class="sec2 reveal" id="about">
             <div class="sec-2-1">
@@ -162,7 +168,7 @@
             </div>
         </section>
 
-        <!-- Section 3 | Education -->
+        <!-- Section 3 | Education 
         <section class="education reveal" id="education">
             <div class="education-title">
                 <span class="section-tag">ACADEMIC JOURNEY</span>
@@ -208,7 +214,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--Section 4 | Skills-->
         <section class="sec3 reveal" id="skills">
@@ -265,6 +271,11 @@
                     <div class="skills-1">
                         <i class="fa-brands fa-js"></i>
                         <span>JavaScript</span>
+                    </div>
+
+                    <div class="skills-1">
+                        <i class="fa-brands fa-react"></i>
+                        <span>React.js</span>
                     </div>
                 </div>
             </div>
@@ -361,94 +372,249 @@
         </section>
         <!--Section 6 | Certifications -->
         <section class="sec5 reveal" id="certifications">
+            <!-- Section Heading -->
             <div class="sec-5-1">
                 <span>My Achievements</span>
                 <h1>Certifications</h1>
             </div>
+            <!-- Certification Cards -->
             <div class="sec-5-2">
+                <!-- Certificate 1 -->
                 <div class="certificate-box">
-                    <a href="assets/Java Full Stack.jpg" target="_blank">
-                        <img src="assets/Java Full Stack.jpg" alt="Java Full Stack">
-                    </a>
-                    <h3>Java Full Stack</h3>
-                    <h5>Issued by Wipro TalentNext</h5>
-                    <p>
-                        Skills Gained: Core Java, OOP, JDBC, Servlets, JSP, HTML, CSS, JavaScript, SQL, and Full Stack Development.
-                    </p>
-                </div>
-                <div class="certificate-box">
-                    <a href="assets/Cloud Computing.jpg" target="_blank">
-                        <img src="assets/Cloud Computing.jpg" alt="Cloud Computing">
-                    </a>
-                    <h3>Cloud Computing</h3>
-                    <h5>Issued by NPTEL</h5>
-                    <p>
-                        Skills Gained: Cloud Architecture, Virtualization, Distributed Systems, Storage, Security, and Cloud Service Models.
-                    </p>
-                </div>
-                <div class="certificate-box">
-                    <a href="assets/Python.jpg" target="_blank">
-                        <img src="assets/Python.jpg" alt="Python Foundation">
-                    </a>
-                    <h3>Python Foundation</h3>
-                    <h5>Issued by Infosys Springboard</h5>
-                    <p>
-                        Skills Gained: Python Basics, OOP, Functions, File Handling, Exception Handling, Modules, and Data Structures.
-                    </p>
-                </div>
-                <div class="certificate-box">
-                    <a href="assets/SE.jpg" target="_blank">
-                        <img src="assets/SE.jpg" alt="Software Engineering">
-                    </a>
-                    <h3>Software Engineering Job Simulation</h3>
-                    <h5>Issued by Forage (Commonwealth Bank)</h5>
-                    <p>
-                        Skills Gained: APIs, Git, Software Testing, Debugging, Agile, SDLC, Code Review, and Problem Solving.
-                    </p>
-                </div>
-
-                <div class="certificate-box">
-                    <a href="assets/SQL.jpg" target="_blank">
-                        <img src="assets/SQL.jpg" alt="SQL">
-                    </a>
-                    <h3>SQL & Relational Databases 101</h3>
-                    <h5>Issued by IBM Skills Network</h5>
-                    <p>
-                        Skills Gained: SQL, Joins, CRUD, DDL/DML, Subqueries, Views, Stored Procedures, and Query Optimization.
-                    </p>
-                </div>
+                    <div class="certificate-top">
+                        <i class="fa-solid fa-code"></i>
+                        <span class="certificate-company">
+                            WIPRO TALENTNEXT
+                        </span>
+                    </div>
+                    <a href="assets/Java Full Stack.jpg"
+                    target="_blank"
+                    class="certificate-name">
+                    Java Full Stack
+                </a>
+                <p>
+                Skills: Core Java, OOP, JDBC, Servlets, JSP,
+                HTML, CSS, JavaScript, SQL, and Full Stack Development.
+                </p>
             </div>
-        </section>
 
+
+            <!-- Certificate 2 -->
+            <div class="certificate-box">
+
+                <div class="certificate-top">
+                    <i class="fa-solid fa-cloud"></i>
+                    <span class="certificate-company">
+                    NPTEL
+                    </span>
+                </div>
+                <a href="assets/Cloud Computing.jpg"
+                target="_blank"
+                class="certificate-name">
+                Cloud Computing
+                </a>
+
+                <p>
+                Skills: Cloud Architecture, Virtualization,
+                Distributed Systems, Storage, Security,
+                and Cloud Service Models.
+                </p>
+
+            </div>
+
+
+            <!-- Certificate 3 -->
+            <div class="certificate-box">
+
+                <div class="certificate-top">
+                    <i class="fa-brands fa-python"></i>
+                    <span class="certificate-company">
+                    INFOSYS SPRINGBOARD
+                    </span>
+                </div>
+
+                <a href="assets/Python.jpg"
+                target="_blank"
+                class="certificate-name">
+                Python Foundation
+                </a>
+
+                <p>
+                Skills: Python Basics, OOP, Functions,
+                File Handling, Exception Handling,
+                Modules, and Data Structures.
+                </p>
+
+            </div>
+
+
+            <!-- Certificate 4 -->
+            <div class="certificate-box">
+
+                <div class="certificate-top">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span class="certificate-company">
+                    FORAGE – COMMONWEALTH BANK
+                    </span>
+                </div>
+
+                <a href="assets/SE.jpg"
+                target="_blank"
+                class="certificate-name">
+                Software Engineering Job Simulation
+                </a>
+
+                <p>
+                Skills: APIs, Git, Software Testing,
+                Debugging, Agile, SDLC, Code Review,
+                and Problem Solving.
+                </p>
+
+            </div>
+
+
+            <!-- Certificate 5 -->
+            <div class="certificate-box">
+
+                <div class="certificate-top">
+                    <i class="fa-solid fa-database"></i>
+                    <span class="certificate-company">
+                    IBM SKILLS NETWORK
+                    </span>
+                </div>
+
+                <a href="assets/SQL.jpg"
+                target="_blank"
+                class="certificate-name">
+                SQL & Relational Databases 101
+                </a>
+
+                <p>
+                Skills: SQL, Joins, CRUD, DDL/DML,
+                Subqueries, Views, Stored Procedures,
+                and Query Optimization.
+                </p>
+
+            </div>
+        </div>
+        </section>
         <!-- Section | Experience -->
-         <section class="sec8 reveal" id="experience">
+        <section class="sec8 reveal" id="experience">
             <div class="sec-8-1">
                 <span class="section-tag">LEADERSHIP & EXPERIENCE</span>
-                <span class="section-subtitle">PLACEMENT COORDINATOR</span>
                 <h1>Experience</h1>
             </div>
-            <div class="experience-box">
-                <div class="experience-icon">
-                    <i class="fa-solid fa-users"></i>
-                </div>
-                <div class="experience-content">
-                    <h3>Placement Coordinator</h3>
+
+            <div class="experience-list">
+
+                <!-- Experience 1 -->
+                <div class="experience-item">
+
+                    <!-- Left Side -->
+                    <div class="experience-date">
+                        <span>2025 – 2026</span>
+                        <small>LEADERSHIP</small>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="experience-content">
+
+                    <div class="experience-title">
+                        <h3>Placement Coordinator</h3>
+                    </div>
+
                     <h4>KKR & KSR Institute of Technology and Sciences</h4>
-                    <span>2025 – 2026</span>
+
+                    <p class="experience-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Guntur, Andhra Pradesh
+                    </p>
 
                     <ul>
-                        <li>Served as a Placement Coordinator, supporting campus recruitment activities and acting as a liaison between students, recruiters, and the placement cell.</li>
+                        <li>
+                        Coordinated campus placement activities and maintained communication between students, recruiters, and the placement cell.
+                        </li>
 
-                        <li>Collected, verified, and managed student data using Google Forms and Microsoft Excel for recruitment processes.</li>
+                        <li>
+                        Managed student placement data and recruitment updates using Google Forms and Microsoft Excel.
+                        </li>
 
-                        <li>Coordinated communication for Infosys Pool Drive, HCL, and other placement drives, ensuring timely updates to students.</li>
-
-                        <li>Assisted in organizing recruitment events, interview schedules, and placement documentation.</li>
-
-                        <li>Worked closely with faculty members and placement officers to ensure smooth execution of campus hiring activities.</li>
+                        <li>
+                        Assisted in organizing placement drives, interview schedules, and recruitment documentation.
+                        </li>
                     </ul>
+
                 </div>
+
             </div>
+            
+            <div class="experience-item">
+                <div class="experience-date">
+                    <span>Jan 2025 – March 2025</span>
+                    <small>INTERNSHIP</small>
+                </div>
+
+                <div class="experience-content">
+
+                    <div class="experience-title">
+                        <h3>Full Stack Development Intern</h3>
+                    </div>
+
+                    <h4>Blackbucks Engineer</h4>
+
+                    <p class="experience-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Remote
+                    </p>
+
+                    <ul>
+                        <li>Designed and developed responsive web applications using HTML5, CSS3, and JavaScript.</li>
+
+                        <li>Implemented responsive user interfaces following web development and SDLC best practices.</li>
+
+                        <li>Used Git and GitHub for version control, code management, and project collaboration.</li>
+
+                        <li>Performed application testing and debugging to identify and resolve functional issues.</li>
+
+                        <li>Applied software development concepts through practical assignments and hands-on projects.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="experience-item">
+                <div class="experience-date">
+                    <span>May 2024 – July 2024</span>
+                    <small>INTERNSHIP</small>
+                </div>
+
+                <div class="experience-content">
+
+                    <div class="experience-title">
+                        <h3>AI-ML-DS Intern</h3>
+                    </div>
+
+                    <h4>Blackbucks Engineer</h4>
+
+                    <p class="experience-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Remote
+                    </p>
+
+                    <ul>
+                        <li> Developed and evaluated 3+ machine learning models using Python, Pandas, and NumPy on real-world datasets.</li>
+
+                        <li> Performed data cleaning, preprocessing, EDA, and data visualization on 10,000+ records.</li>
+
+                        <li>Applied machine learning techniques to extract insights and improve model performance, achieving 85% accuracy during initial experimentation.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            </div>
+
         </section>
         <!--Section 7 | Contact -->
         <section class="sec6 reveal" id="contact">
@@ -466,14 +632,14 @@
         <section class="sec7 reveal">
             <ul class="footer-menu">
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
+                <!-- <li><a href="#education">Education</a></li> -->
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <p class="copyright">© 2026 Sindhu Nelluri. All Rights Reserved.</p>
+            <p class="copyright">✦ Crafted with Code & Curiosity · © 2026 Sindhu Nelluri ✦</p>
         </section>
         <script
             src="script.js">
