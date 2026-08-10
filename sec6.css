@@ -1,88 +1,139 @@
-.sec6{
+/* =========================
+   SECTION 6 - CONTACT
+========================= */
+
+.sec6 {
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     gap: 80px;
-    padding-top: 130px;
-    padding:130px 20px 80px;
-    scroll-margin-top:110px;
+
+    padding:
+        130px 20px 80px;
+
+    scroll-margin-top: 110px;
 }
-.sec-6-1{
+
+/* =========================
+   HEADING
+========================= */
+
+.sec-6-1 {
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
 }
-.sec-6-1>:nth-child(1){
-    font-weight: 600;  
+
+.sec-6-1 > :nth-child(1) {
+
+    font-weight: 600;
 }
-.sec-6-2{
+
+/* =========================
+   CONTACT BOX
+========================= */
+
+.sec-6-2 {
+
     display: flex;
+
     gap: 30px;
-    border:2px solid black;
+
+    border: 2px solid black;
+
     padding: 25px;
+
     border-radius: 30px;
+
     margin-bottom: 100px;
 }
-.a1{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.a2{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.a1 img{
-    width: 35px;
-}
-.a2 img{
-    width: 28px;
-}
-.a1 span, .a2 span{
-    font-weight: 600;
-}
-.a3{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
-.a3 img{
-    width: 30px;
-}
-
-.a3 span{
-    font-weight: 600;
-}
-@media (max-width:767px){
-
-.sec6{
-    padding-top: 80px;
-}
-
-.sec-6-2{
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-}
+/* =========================
+   CONTACT LINKS
+========================= */
 
 .a1,
 .a2,
-.a3{
-    width: 100%;
+.a3 {
+
     display: flex;
-    justify-content: center;
+
     align-items: center;
+
     gap: 10px;
 }
 
-.a1 span{
-    word-break: break-word;
-    text-align: center;
+.a1 img {
+    width: 35px;
 }
 
+.a2 img {
+    width: 28px;
+}
+
+.a3 img {
+    width: 30px;
+}
+
+.a1 span,
+.a2 span,
+.a3 span {
+
+    font-weight: 600;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+    .sec6 {
+
+        padding-top: 80px;
+    }
+
+    .sec-6-2 {
+
+        width: 95%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+
+        padding: 20px;
+
+        margin-bottom: 60px;
+    }
+
+    .a1,
+    .a2,
+    .a3 {
+
+        width: 100%;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 10px;
+    }
+
+    .a1 span {
+
+        word-break: break-word;
+
+        text-align: center;
+    }
 }
