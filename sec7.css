@@ -1,72 +1,116 @@
-.sec7{
-    width:100%;
-    padding:25px 20px;
-    background:darkorange;
-    color:#fff;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    gap:15px;
+/* =========================
+   FOOTER
+========================= */
+
+.sec7 {
+
+    width: 100%;
+
+    padding: 25px 20px;
+
+    background: darkorange;
+
+    color: #fff;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
 }
 
-.footer-menu{
-    display:flex;
-    gap:30px;
-    list-style:none;
-    padding:0;
-    margin:0;
+/* =========================
+   FOOTER MENU
+========================= */
+
+.footer-menu {
+
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
 }
 
-.footer-menu a{
-    color:#fff;
-    text-decoration:none;
-}
+.footer-menu li {
 
-.sec7 p{
-    margin:0;
-    color:#ccc;
-    font-size:15px;
-}
-
-.footer-menu li{
     white-space: nowrap;
 }
 
-.footer-menu li a{
-    text-decoration:none;
-    color:black;
+.footer-menu li a {
+
+    text-decoration: none;
+
+    color: black;
+
+    transition: 0.25s;
 }
 
-.sec7 span{
-    display: block;
-    width: 100%;
-    margin: 30px auto 20px;
+.footer-menu li a:hover {
+
+    color: white;
+
+    text-decoration: none;
+}
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.sec7 p {
+
+    margin: 0;
+
+    color: black;
+
+    font-size: 15px;
+
     text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.6;
-}
-.copyright{
-    margin-top:10px;
-    color:black;
-    text-align:center;
-}
-@media(max-width:767px){
-
-.footer-menu{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
 }
 
-.sec7 span{
-    width:100%;
-    text-align:center;
-    line-height:1.6;
-    font-size:13px;
-    margin-top:25px;
+.copyright {
+
+    margin-top: 10px;
+
+    color: black;
+
+    text-align: center;
 }
 
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+    .footer-menu {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .sec7 {
+
+        padding: 25px 15px;
+    }
+
+    .sec7 p {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
 }
