@@ -3,62 +3,52 @@
 ========================= */
 
 .sec4 {
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
-    padding: 100px 20px;
+    padding: 90px 20px;
 }
+
 
 /* =========================
    HEADING
 ========================= */
 
 .sec-4-1 {
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
 }
+
 
 /* =========================
    PROJECT CONTAINER
 ========================= */
 
 .sec-4-2 {
-
-    display: flex;
-
-    gap: 50px;
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
     width: 100%;
-
+    max-width: 950px;
     justify-content: center;
+    align-items: start;
 }
+
 
 /* =========================
    PROJECT CARD
 ========================= */
 
 .box3 {
-
     width: 100%;
-
-    max-width: 850px;
-
+    max-width: 440px;
     background: #fff;
-
-    border-radius: 20px;
-
-    padding: 20px;
+    border-radius: 18px;
+    padding: 15px;
 
     box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.07);
+        0 10px 25px rgba(0, 0, 0, 0.07);
 
     overflow: hidden;
 
@@ -68,33 +58,29 @@
 }
 
 .box3:hover {
-
     transform: translateY(-5px);
 
     box-shadow:
-        0 18px 35px rgba(0, 0, 0, 0.12);
+        0 16px 30px rgba(0, 0, 0, 0.12);
 }
+
 
 /* =========================
    PROJECT IMAGE
 ========================= */
 
 .slider {
-
     width: 100%;
-
     position: relative;
 }
 
 .slider img {
-
     width: 100%;
-
-    height: 320px;
+    height: 185px;
 
     object-fit: cover;
 
-    border-radius: 15px;
+    border-radius: 13px;
 
     display: block;
 
@@ -102,46 +88,44 @@
         0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
+
 /* =========================
    PROJECT CONTENT
 ========================= */
 
 .box3-2 {
-
-    padding: 30px;
+    padding: 15px;
 
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
 
     text-align: center;
 
-    gap: 15px;
+    gap: 9px;
 }
 
 .box3-2 h3 {
-
-    font-size: 30px;
-
+    font-size: 20px;
     font-weight: 700;
+
+    margin: 5px 0;
 }
 
 .box3-2 p {
-
     color: #555;
 
     width: 100%;
 
     text-align: justify;
 
-    line-height: 1.8;
+    line-height: 1.6;
 
-    font-size: 17px;
+    font-size: 14px;
 
-    margin: 15px 0;
+    margin: 7px 0;
 }
+
 
 /* =========================
    SLIDER BUTTON
@@ -149,7 +133,6 @@
 
 .prev,
 .next {
-
     position: absolute;
 
     top: 50%;
@@ -157,7 +140,6 @@
     transform: translateY(-50%);
 
     width: 28px;
-
     height: 28px;
 
     border: none;
@@ -178,16 +160,15 @@
 }
 
 .prev {
-    left: 10px;
+    left: 8px;
 }
 
 .next {
-    right: 10px;
+    right: 8px;
 }
 
 .next:hover,
 .prev:hover {
-
     background: darkorange;
 
     transform:
@@ -195,115 +176,123 @@
         scale(1.08);
 }
 
+
 /* =========================
    TECH STACK
 ========================= */
 
 .tech-stack {
-
     display: flex;
 
     flex-wrap: wrap;
 
-    gap: 10px;
+    gap: 6px;
 
     justify-content: center;
 }
 
 .tech-stack span {
-
     background: #fff3e8;
 
     color: #ff6b00;
 
-    padding: 8px 18px;
+    padding: 6px 12px;
 
     border-radius: 30px;
 
     font-weight: 600;
 
-    font-size: 14px;
+    font-size: 12px;
 }
+
 
 /* =========================
    PROJECT FEATURES
 ========================= */
 
 .project-features {
-
     list-style: none;
 
     padding: 0;
 
+    margin: 5px 0;
+
     display: grid;
 
-    grid-template-columns:
-        repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
-    gap: 12px;
+    gap: 7px;
+
+    width: 100%;
+}
+
+.project-features li {
+    font-size: 13px;
 }
 
 .project-features li::before {
-
     content: "✓";
 
     color: #ff6b00;
 
     font-weight: bold;
 
-    margin-right: 8px;
+    margin-right: 7px;
 }
 
+
 /* =========================
-   PROJECT BUTTON
+   PROJECT BUTTONS
 ========================= */
 
 .project-buttons {
-
     display: flex;
 
-    gap: 15px;
+    gap: 10px;
 
-    margin-top: 10px;
+    margin-top: 5px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
 }
 
 .project-buttons a {
-
     background: #ff6b00;
 
     color: #fff;
 
     text-decoration: none;
 
-    padding: 12px 28px;
+    padding: 9px 18px;
 
     border-radius: 30px;
 
     font-weight: 600;
 
+    font-size: 13px;
+
     transition: 0.25s;
 }
 
 .project-buttons a:hover {
-
     background: #e65f00;
 
     transform: translateY(-2px);
 }
+
 
 /* =========================
    PROJECT REVEAL
 ========================= */
 
 .sec4.reveal {
-
     opacity: 0;
 
     transform: translateY(40px);
 }
 
 .sec4.reveal.active {
-
     opacity: 1;
 
     transform: translateY(0);
@@ -314,7 +303,6 @@
 }
 
 .sec4 .box3 {
-
     opacity: 0;
 
     transform: translateY(20px);
@@ -325,11 +313,31 @@
 }
 
 .sec4.active .box3 {
-
     opacity: 1;
 
     transform: translateY(0);
 }
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .sec-4-2 {
+        grid-template-columns: 1fr;
+
+        max-width: 550px;
+
+        gap: 25px;
+    }
+
+    .box3 {
+        max-width: 500px;
+    }
+}
+
 
 /* =========================
    MOBILE
@@ -338,40 +346,66 @@
 @media (max-width: 767px) {
 
     .sec4 {
-
-        padding:
-            70px 15px;
+        padding: 70px 15px;
     }
 
-    .box3 {
-
-        width: 95%;
-    }
-
-    .slider img {
-
-        height: 220px;
-    }
-
-    .box3-2 {
-
-        padding: 20px;
-    }
-
-    .box3-2 h3 {
-
-        font-size: 23px;
-    }
-
-    .box3-2 p {
-
-        font-size: 15px;
-    }
-
-    .project-features {
-
+    .sec-4-2 {
         grid-template-columns: 1fr;
 
         width: 100%;
+
+        gap: 20px;
+    }
+
+    .box3 {
+        width: 95%;
+
+        max-width: 480px;
+    }
+
+    .slider img {
+        height: 200px;
+    }
+
+    .box3-2 {
+        padding: 15px;
+    }
+
+    .box3-2 h3 {
+        font-size: 20px;
+    }
+
+    .box3-2 p {
+        font-size: 14px;
+    }
+
+    .tech-stack {
+        gap: 7px;
+    }
+
+    .tech-stack span {
+        padding: 6px 12px;
+
+        font-size: 12px;
+    }
+
+    .project-features {
+        grid-template-columns: 1fr;
+
+        width: 100%;
+    }
+
+    .project-features li {
+        font-size: 13px;
+    }
+
+    .project-buttons {
+        gap: 10px;
+    }
+
+    .project-buttons a {
+        padding: 9px 18px;
+
+        font-size: 13px;
     }
 }
