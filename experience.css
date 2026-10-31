@@ -61,30 +61,7 @@
     background: #ff6b00;
     border-radius: 3px;
 }
-/* moving circle */
-.xm {
-    position: absolute;
-    top: 0;
-    left: 12.5px;
-    width: 22px;
-    height: 22px;
-    margin: -11px 0 0 -11px;
-    border-radius: 50%;
-    background: #ff6b00;
-    border: 4px solid #fff;
-    box-shadow: 0 0 0 4px rgba(255, 107, 0, 0.25);
-    z-index: 3;
-    animation: xpulse 1.6s infinite;
-}
 
-@keyframes xpulse {
-    0%, 100% {
-        box-shadow: 0 0 0 4px rgba(255, 107, 0, 0.25);
-    }
-    50% {
-        box-shadow: 0 0 0 9px rgba(255, 107, 0, 0.1);
-    }
-}
 .xi {
     position: relative;
 }
