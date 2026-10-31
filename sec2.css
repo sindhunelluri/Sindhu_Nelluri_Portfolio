@@ -1,0 +1,441 @@
+
+/* =========================================
+   SECTION 2 — ABOUT
+========================================= */
+
+.sec2 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.sec2::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    top: 100px;
+    left: -160px;
+    background: radial-gradient(
+        circle,
+        rgba(255, 107, 0, 0.09),
+        transparent 70%
+    );
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.sec-2-1 {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sec-2-1 > :nth-child(1) {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff6b00;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.sec-2-1 h1 {
+    font-size: clamp(42px, 5vw, 60px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 8px 0 12px;
+    color: #171717;
+    letter-spacing: -2px;
+}
+
+.section-subtitle {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   ABOUT LAYOUT
+========================================= */
+
+.sec-2-2 {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(45px, 7vw, 90px);
+    margin-top: 65px;
+    padding: 0 30px;
+}
+
+.sec-2-2-1 {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================================
+   PROFILE PHOTO
+========================================= */
+
+.photo-wrap {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px;
+    border: 5px solid #fff;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.13);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.photo-wrap img:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 24px 50px rgba(255, 107, 0, 0.16);
+}
+
+/* =========================================
+   FLOATING LABELS
+========================================= */
+
+.float {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    color: #222;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 17px;
+    border-radius: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    z-index: 2;
+    white-space: nowrap;
+    animation: floatY 3.5s ease-in-out infinite;
+}
+
+.float i {
+    color: #ff6b00;
+    margin-right: 7px;
+}
+
+.f1 {
+    top: 20px;
+    right: -35px;
+}
+
+.f2 {
+    bottom: 25px;
+    left: -35px;
+    animation-delay: 1.2s;
+}
+
+@keyframes floatY {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-9px);
+    }
+}
+
+/* =========================================
+   RIGHT CONTENT
+========================================= */
+
+.sec-2-2-2 {
+    flex: 1;
+    max-width: 700px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* =========================================
+   ABOUT CARD
+========================================= */
+
+.about-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ededed;
+    border-left: 4px solid #ff6b00;
+    border-radius: 18px;
+    padding: 27px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.055);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 17px 35px rgba(255, 107, 0, 0.11);
+}
+
+.p1 {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #555;
+    margin: 0;
+}
+
+/* =========================================
+   ABOUT STATISTICS
+========================================= */
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.about-stats div {
+    background: linear-gradient(145deg, #fff6f0, #ffede1);
+    border: 1px solid #ffe4d2;
+    border-radius: 17px;
+    padding: 20px 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-stats div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(255, 107, 0, 0.12);
+}
+
+.about-stats b {
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    color: #ff6b00;
+    line-height: 1.3;
+}
+
+.about-stats small {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+    font-weight: 600;
+}
+
+/* =========================================
+   SKILL / INTEREST TAGS
+========================================= */
+
+.about-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.about-tags span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border: 1px solid #e7e7e7;
+    border-radius: 30px;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.about-tags span i {
+    color: #ff6b00;
+    font-size: 16px;
+}
+
+.about-tags span:hover {
+    background: #ff6b00;
+    border-color: #ff6b00;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(255, 107, 0, 0.2);
+}
+
+.about-tags span:hover i {
+    color: #fff;
+}
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .sec2 {
+        min-height: auto;
+        padding: 70px 20px 50px;
+    }
+
+    .sec-2-2 {
+        flex-direction: column;
+        gap: 45px;
+        margin-top: 45px;
+        padding: 0 15px;
+    }
+
+    .photo-wrap,
+    .photo-wrap img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .sec-2-2-2 {
+        width: 100%;
+        max-width: 750px;
+    }
+
+    .about-tags {
+        justify-content: center;
+    }
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .sec2 {
+        padding: 55px 16px 40px;
+    }
+
+    .sec-2-1 {
+        margin-top: 25px;
+    }
+
+    .sec-2-1 h1 {
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+
+    .section-subtitle {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .sec-2-2 {
+        margin-top: 35px;
+        gap: 40px;
+        padding: 0 5px;
+    }
+
+    .photo-wrap,
+    .photo-wrap img {
+        width: 225px;
+        height: 225px;
+    }
+
+    .photo-wrap img {
+        border-radius: 22px;
+    }
+
+    .f1 {
+        right: -15px;
+        top: 10px;
+    }
+
+    .f2 {
+        left: -15px;
+        bottom: 15px;
+    }
+
+    .float {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+
+    .about-content {
+        gap: 18px;
+    }
+
+    .about-card {
+        padding: 21px 18px;
+        border-radius: 15px;
+    }
+
+    .p1 {
+        font-size: 14px;
+        line-height: 1.85;
+        text-align: left;
+    }
+
+    .about-stats {
+        gap: 9px;
+    }
+
+    .about-stats div {
+        padding: 15px 6px;
+        border-radius: 13px;
+    }
+
+    .about-stats b {
+        font-size: 23px;
+    }
+
+    .about-stats small {
+        font-size: 10px;
+    }
+
+    .about-tags {
+        justify-content: flex-start;
+        gap: 9px;
+    }
+
+    .about-tags span {
+        padding: 9px 13px;
+        font-size: 12px;
+    }
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .float {
+        animation: none;
+    }
+
+    .about-card,
+    .about-stats div,
+    .about-tags span,
+    .photo-wrap img {
+        transition: none;
+    }
+}

@@ -1,0 +1,132 @@
+/* Section | Hackathons & Skill-Oriented Courses */
+
+.sec9 {
+    padding: 80px 8%;
+}
+
+.sec-9-1 {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.sec-9-1 .section-tag {
+    display: block;
+    color: #f97316;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.sec-9-1 .section-subtitle {
+    display: block;
+    color: #777;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.sec-9-1 h1 {
+    font-size: 36px;
+    margin: 10px 0;
+    color: #171717;
+}
+
+.sec-9-2 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.learning-card {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.learning-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff6b00;
+    box-shadow: 0 16px 32px rgba(255, 107, 0, 0.16);
+}
+
+/* faint number behind the card */
+.learn-num {
+    position: absolute;
+    right: 16px;
+    top: 1px;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1;
+    color: #fff1e8;
+    pointer-events: none;
+}
+
+.learning-card > *:not(.learn-num) {
+    position: relative;
+}
+
+.learning-card h3 {
+    transition: color 0.3s ease;
+}
+
+.learning-card:hover h3 {
+    color: #ff6b00;
+}
+
+.learning-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.learning-top i {
+    color: #f97316;
+    font-size: 24px;
+}
+
+.learning-category {
+    color: #f97316;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.learning-card h3 {
+    color: #222;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.learning-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+    .sec-9-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .sec9 {
+        padding: 60px 6%;
+    }
+
+    .sec-9-1 h1 {
+        font-size: 28px;
+    }
+
+    .sec-9-2 {
+        grid-template-columns: 1fr;
+    }
+}
