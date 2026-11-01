@@ -60,6 +60,8 @@
     cursor: pointer;
 
     transition: transform 0.3s ease;
+
+    will-change: transform;
 }
 
 .hero-right img:hover {
