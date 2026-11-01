@@ -504,3 +504,17 @@ if (xp) {
     xp.querySelectorAll("[data-n]").forEach((el) => countObserver.observe(el));
 }
 
+const resumeDropdown = document.querySelector('.resume-dropdown');
+const resumeBtn = document.getElementById('resumeBtn');
+
+resumeBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = resumeDropdown.classList.toggle('open');
+    resumeBtn.setAttribute('aria-expanded', isOpen);
+});
+
+// close when clicking outside or choosing an option
+document.addEventListener('click', () => {
+    resumeDropdown.classList.remove('open');
+    resumeBtn.setAttribute('aria-expanded', 'false');
+});

@@ -312,6 +312,8 @@ h1 {
 
     display: flex;
 
+    align-items: flex-start;
+
     gap: 20px;
 
     margin: 35px 0;
@@ -336,16 +338,140 @@ h1 {
         0 10px 20px rgba(255, 107, 0, 0.18);
 }
 
-.btns a:first-child {
+.contact-btn {
+
+    border: 2px solid black;
+}
+
+/* =========================
+   RESUME DROPDOWN
+========================= */
+
+.resume-dropdown {
+
+    position: relative;
+}
+
+.resume-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 15px 30px;
+
+    border: none;
+
+    border-radius: 40px;
 
     background: #ff6b00;
 
     color: white;
+
+    font: inherit;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s;
 }
 
-.contact-btn {
+.resume-btn:hover {
 
-    border: 2px solid black;
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 20px rgba(255, 107, 0, 0.18);
+}
+
+.resume-btn i {
+
+    font-size: 12px;
+
+    transition: transform 0.25s;
+}
+
+.resume-dropdown.open .resume-btn i {
+
+    transform: rotate(180deg);
+}
+
+.resume-menu {
+
+    position: absolute;
+
+    top: calc(100% + 10px);
+
+    left: 0;
+
+    min-width: 100%;
+
+    width: max-content;
+
+    padding: 8px;
+
+    background: white;
+
+    border: 1px solid #eee;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.12);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(-8px);
+
+    transition: 0.2s;
+
+    z-index: 10;
+}
+
+.resume-dropdown.open .resume-menu {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.resume-menu a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 18px;
+
+    border-radius: 12px;
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.resume-menu a:hover {
+
+    background: #fff1e8;
+
+    color: #ff6b00;
+
+    transform: none;
+
+    box-shadow: none;
 }
 
 /* =========================
@@ -558,6 +684,30 @@ h1 {
         width: 85%;
 
         text-align: center;
+    }
+
+    .resume-dropdown {
+
+        width: 85%;
+    }
+
+    .resume-btn {
+
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .resume-menu {
+
+        width: 100%;
+    }
+
+    .resume-menu a {
+
+        width: auto;
+
+        text-align: left;
     }
 
     .social a {
